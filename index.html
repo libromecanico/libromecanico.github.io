@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="gl">
 <head>
@@ -14,130 +15,114 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #f4f6f8;
+            background: #f5f5f5;
             color: #333;
-            line-height: 1.7;
         }
 
         header {
             background: #263b4d;
             color: white;
             text-align: center;
-            padding: 70px 20px;
+            padding: 55px 20px 45px;
         }
 
         header h1 {
             max-width: 900px;
-            margin: auto;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            margin-top: 15px;
-            font-size: 1.2rem;
+            margin: 0 auto;
+            font-size: 2.4rem;
+            font-weight: 600;
         }
 
         main {
-            max-width: 1100px;
-            margin: 45px auto;
+            max-width: 1000px;
+            margin: 40px auto;
             padding: 0 20px;
         }
 
-        section {
+        .intro {
             background: white;
-            padding: 40px;
-            margin-bottom: 35px;
-            border-radius: 14px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-
-        h2 {
-            color: #263b4d;
-            margin-top: 0;
-            font-size: 1.8rem;
-        }
-
-        .introducion {
-            font-size: 1.1rem;
-        }
-
-        .recursos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .tarxeta {
-            border: 1px solid #e1e5e8;
+            padding: 30px;
             border-radius: 12px;
-            padding: 25px;
-            background: #fafbfc;
-            display: flex;
-            flex-direction: column;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .intro p {
+            margin: 10px 0;
+            font-size: 1.05rem;
+        }
+
+        .fichas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .ficha {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: block;
+        }
+
+        .ficha:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 7px 18px rgba(0,0,0,0.15);
         }
 
         .icono {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            margin-bottom: 15px;
         }
 
-        .tarxeta h3 {
+        .ficha h2 {
             color: #263b4d;
-            margin: 5px 0 10px;
+            margin: 5px 0 12px;
+            font-size: 1.4rem;
         }
 
-        .tarxeta p {
-            flex-grow: 1;
-        }
-
-        .boton {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 18px;
-            background: #263b4d;
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            border-radius: 7px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .boton:hover {
-            background: #1f6feb;
-            transform: translateY(-2px);
+        .ficha p {
+            margin: 0;
+            line-height: 1.6;
         }
 
         .cita {
-            margin-top: 25px;
-            padding: 25px;
-            background: #eef2f5;
+            margin-top: 40px;
+            background: white;
+            padding: 30px;
             border-left: 5px solid #263b4d;
+            border-radius: 8px;
             font-style: italic;
-            font-size: 1.1rem;
+            line-height: 1.7;
         }
 
         footer {
+            margin-top: 50px;
             background: #263b4d;
             color: white;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 50px;
+            padding: 25px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
 
             header h1 {
                 font-size: 1.8rem;
             }
 
-            section {
-                padding: 25px;
+            .fichas {
+                grid-template-columns: 1fr;
             }
 
-            .recursos {
-                grid-template-columns: 1fr;
+            .intro,
+            .ficha,
+            .cita {
+                padding: 25px;
             }
         }
     </style>
@@ -146,246 +131,153 @@
 <body>
 
 <header>
-
     <h1>
         Páxina oficial da pequena biografía de Ángela Ruíz Robles
     </h1>
-
-    <p>
-        Unha pioneira da educación e da innovación tecnolóxica
-    </p>
-
 </header>
 
 
 <main>
 
-    <section>
-
-        <div class="introducion">
-
-            <p>
-                A idea deste libro parte da necesidade de poñer en valor as
-                cualidades e traxectoria de mulleres <strong>STEAM</strong>
-                que foron pioneiras no seu eido.
-            </p>
-
-            <p>
-                Este exemplar contén máis que unha breve biografía ilustrada
-                por Tania Solla e editada por Lela Edicións.
-            </p>
-
-            <p>
-                Nesta páxina podedes atopar diferentes recursos para coñecer
-                mellor a figura de Ángela Ruiz Robles, o seu Libro Mecánico
-                e a súa importancia na historia da innovación educativa.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <section>
-
-        <h2>
-            📚 Recursos educativos
-        </h2>
-
-        <div class="recursos">
-
-
-            <div class="tarxeta">
-
-                <div class="icono">📖</div>
-
-                <h3>
-                    Libro mecánico interactivo
-                </h3>
-
-                <p>
-                    Descubre unha versión interactiva do Libro Mecánico
-                    de Ángela Ruiz Robles.
-                </p>
-
-                <a class="boton"
-                   href="#libro">
-                    Explorar
-                </a>
-
-            </div>
-
-
-            <div class="tarxeta">
-
-                <div class="icono">🗺️</div>
-
-                <h3>
-                    O libro do futuro
-                </h3>
-
-                <p>
-                    Debuxa e imaxina como sería o teu propio libro mecánico
-                    do futuro.
-                </p>
-
-                <a class="boton"
-                   href="#futuro">
-                    Crear
-                </a>
-
-            </div>
-
-
-            <div class="tarxeta">
-
-                <div class="icono">📚</div>
-
-                <h3>
-                    Vocabulario e bibliografía
-                </h3>
-
-                <p>
-                    Consulta vocabulario de interese e referencias
-                    bibliográficas relacionadas coa autora.
-                </p>
-
-                <a class="boton"
-                   href="#bibliografia">
-                    Consultar
-                </a>
-
-            </div>
-
-
-            <div class="tarxeta">
-
-                <div class="icono">🎮</div>
-
-                <h3>
-                    Xogo en Python
-                </h3>
-
-                <p>
-                    Accede ao xogo realizado con Python e consulta
-                    o seu código no repositorio de GitHub.
-                </p>
-
-                <a class="boton"
-                   href="https://github.com/libromecanico"
-                   target="_blank">
-                    Ir a GitHub
-                </a>
-
-            </div>
-
-
-            <div class="tarxeta">
-
-                <div class="icono">👩‍🏫</div>
-
-                <h3>
-                    Unidade didáctica
-                </h3>
-
-                <p>
-                    Material educativo para traballar na aula sobre
-                    Ángela Ruiz Robles.
-                </p>
-
-                <a class="boton"
-                   href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
-                   target="_blank">
-                    Ver unidade
-                </a>
-
-            </div>
-
-
-            <div class="tarxeta">
-
-                <div class="icono">💬</div>
-
-                <h3>
-                    @libromecanico
-                </h3>
-
-                <p>
-                    Tamén podedes interactuar coa autora a través
-                    das redes sociais.
-                </p>
-
-                <a class="boton"
-                   href="https://twitter.com/libromecanico"
-                   target="_blank">
-                    Visitar Twitter
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="libro">
-
-        <h2>
-            📖 O Libro Mecánico
-        </h2>
+    <div class="intro">
 
         <p>
-            Nesta sección poderemos incorporar a versión interactiva
-            do Libro Mecánico de Ángela Ruiz Robles.
+            A idea deste libro parte da necesidade de poñer en valor as
+            cualidades e traxectoria de mulleres <strong>STEAM</strong>
+            que foron pioneiras no seu eido.
         </p>
-
-    </section>
-
-
-    <section id="futuro">
-
-        <h2>
-            🚀 O libro mecánico do futuro
-        </h2>
 
         <p>
-            Aquí poderemos incorporar un espazo interactivo no que o
-            alumnado poida debuxar e deseñar a súa propia idea dun
-            libro mecánico do futuro.
+            Este exemplar contén máis que unha breve biografía ilustrada
+            por Tania Solla e editada por Lela Edicións.
         </p>
-
-    </section>
-
-
-    <section id="bibliografia">
-
-        <h2>
-            📚 Vocabulario e referencias
-        </h2>
 
         <p>
-            Nesta sección poderemos engadir posteriormente o vocabulario
-            de interese e as referencias bibliográficas.
+            Podedes atopar nela diferentes recursos educativos sobre
+            Ángela Ruíz Robles e o seu Libro Mecánico.
         </p>
 
-    </section>
+    </div>
 
 
-    <section>
+    <div class="fichas">
 
-        <h2>
-            💡 O pensamento de Ángela Ruiz Robles
-        </h2>
+        <!-- LIBRO MECÁNICO -->
+        <a class="ficha" href="#" target="_blank">
 
-        <div class="cita">
+            <div class="icono">📖</div>
 
+            <h2>
+                Libro mecánico
+            </h2>
+
+            <p>
+                Unha versión interactiva do Libro Mecánico.
+            </p>
+
+        </a>
+
+
+        <!-- LIBRO DO FUTURO -->
+        <a class="ficha" href="#" target="_blank">
+
+            <div class="icono">💡</div>
+
+            <h2>
+                Libro do futuro
+            </h2>
+
+            <p>
+                Un mapa onde podedes debuxar a vosa idea
+                dun libro mecánico do futuro.
+            </p>
+
+        </a>
+
+
+        <!-- VOCABULARIO -->
+        <a class="ficha" href="#" target="_blank">
+
+            <div class="icono">📚</div>
+
+            <h2>
+                Vocabulario e bibliografía
+            </h2>
+
+            <p>
+                Vocabulario de interese e referencias bibliográficas.
+            </p>
+
+        </a>
+
+
+        <!-- XOGO -->
+        <a class="ficha"
+           href="https://github.com/libromecanico"
+           target="_blank">
+
+            <div class="icono">🎮</div>
+
+            <h2>
+                Xogo en Python
+            </h2>
+
+            <p>
+                Accede ao xogo e ao repositorio de GitHub.
+            </p>
+
+        </a>
+
+
+        <!-- UNIDADE DIDÁCTICA -->
+        <a class="ficha"
+           href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
+           target="_blank">
+
+            <div class="icono">👩‍🏫</div>
+
+            <h2>
+                Unidade didáctica
+            </h2>
+
+            <p>
+                Material para traballar sobre a autora na aula.
+            </p>
+
+        </a>
+
+
+        <!-- TWITTER -->
+        <a class="ficha"
+           href="https://twitter.com/libromecanico"
+           target="_blank">
+
+            <div class="icono">💬</div>
+
+            <h2>
+                @libromecanico
+            </h2>
+
+            <p>
+                Interactúa coa autora a través das redes sociais.
+            </p>
+
+        </a>
+
+    </div>
+
+
+    <div class="cita">
+
+        <strong>Como diría Ángela Ruiz Robles:</strong>
+
+        <p>
             “Venimos a este mundo no solo a vivir nuestra vida lo más
             cómodo y mejor posible, sino a preocuparnos de los demás,
             para que puedan beneficiarse de algo ofrecido por nosotros.”
+        </p>
 
-        </div>
-
-    </section>
+    </div>
 
 </main>
 
@@ -393,10 +285,13 @@
 <footer>
 
     <p>
-        Páxina educativa sobre Ángela Ruíz Robles
+        Ángela Ruíz Robles · Libro Mecánico
     </p>
 
 </footer>
 
 </body>
 </html>
+```
+
+       
