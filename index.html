@@ -1,6 +1,7 @@
 ```html
 <!DOCTYPE html>
 <html lang="gl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <title>Ángela Ruíz Robles</title>
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -15,7 +17,7 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #f3f5f7;
+            background: #f4f5f6;
             color: #333;
         }
 
@@ -44,10 +46,10 @@
         }
 
         .presentacion p {
-            font-size: 1.15rem;
-            line-height: 1.7;
             max-width: 800px;
             margin: auto;
+            font-size: 1.15rem;
+            line-height: 1.7;
         }
 
         .fichas {
@@ -61,17 +63,19 @@
             min-height: 190px;
             padding: 30px;
             border-radius: 14px;
+
             text-align: center;
             text-decoration: none;
             color: #263b4d;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            transition: 0.2s;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .ficha:hover {
@@ -90,7 +94,7 @@
         }
 
         .boton {
-            padding: 10px 20px;
+            padding: 10px 22px;
             border-radius: 6px;
             background: #263b4d;
             color: white;
@@ -100,9 +104,11 @@
         .cita {
             margin-top: 45px;
             padding: 30px;
+
             background: white;
             border-left: 5px solid #263b4d;
             border-radius: 8px;
+
             text-align: center;
             font-style: italic;
             line-height: 1.7;
@@ -125,20 +131,28 @@
             .fichas {
                 grid-template-columns: 1fr;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
 <header>
+
     <h1>
         Páxina oficial da pequena biografía de Ángela Ruíz Robles
     </h1>
+
 </header>
 
 
 <main>
+
 
     <div class="presentacion">
 
@@ -155,58 +169,111 @@
 
     <div class="fichas">
 
-        <a class="ficha" href="#" target="_blank">
-            <div class="icono">📖</div>
-            <h2>Libro mecánico interactivo</h2>
-            <span class="boton">Acceder</span>
+
+        <!-- ENCICLOPEDIA MECÁNICA -->
+
+        <a class="ficha"
+           href="https://espacio.fundaciontelefonica.com/infos/enciclopediaMecanica/enciclopediaMecanica.html"
+           target="_blank">
+
+            <div class="icono">
+                📖
+            </div>
+
+            <h2>
+                Enciclopedia Mecánica interactiva
+            </h2>
+
+            <span class="boton">
+                Acceder
+            </span>
+
         </a>
 
 
-        <a class="ficha" href="#" target="_blank">
-            <div class="icono">🗺️</div>
-            <h2>Libro mecánico do futuro</h2>
-            <span class="boton">Acceder</span>
+        <!-- MAPA -->
+
+        <a class="ficha"
+           href="https://emapic.es/custom/geolibros/AngelaRuizRobles"
+           target="_blank">
+
+            <div class="icono">
+                🗺️
+            </div>
+
+            <h2>
+                Libro mecánico do futuro
+            </h2>
+
+            <span class="boton">
+                Participar
+            </span>
+
         </a>
 
 
-        <a class="ficha" href="#" target="_blank">
-            <div class="icono">📚</div>
-            <h2>Vocabulario e bibliografía</h2>
-            <span class="boton">Acceder</span>
-        </a>
-
+        <!-- XOGO -->
 
         <a class="ficha"
            href="https://github.com/libromecanico"
            target="_blank">
 
-            <div class="icono">🎮</div>
-            <h2>Xogo en Python</h2>
-            <span class="boton">Acceder</span>
+            <div class="icono">
+                🎮
+            </div>
+
+            <h2>
+                Xogo en Python
+            </h2>
+
+            <span class="boton">
+                Ir a GitHub
+            </span>
 
         </a>
 
+
+        <!-- UNIDADE DIDÁCTICA -->
 
         <a class="ficha"
            href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
            target="_blank">
 
-            <div class="icono">👩‍🏫</div>
-            <h2>Unidade didáctica</h2>
-            <span class="boton">Acceder</span>
+            <div class="icono">
+                👩‍🏫
+            </div>
+
+            <h2>
+                Unidade didáctica
+            </h2>
+
+            <span class="boton">
+                Ver material
+            </span>
 
         </a>
 
+
+        <!-- TWITTER -->
 
         <a class="ficha"
            href="https://twitter.com/libromecanico"
            target="_blank">
 
-            <div class="icono">💬</div>
-            <h2>@libromecanico</h2>
-            <span class="boton">Acceder</span>
+            <div class="icono">
+                💬
+            </div>
+
+            <h2>
+                @libromecanico
+            </h2>
+
+            <span class="boton">
+                Visitar
+            </span>
 
         </a>
+
 
     </div>
 
@@ -219,9 +286,12 @@
             para que puedan beneficiarse de algo ofrecido por nosotros.”
         </p>
 
-        <strong>Ángela Ruiz Robles</strong>
+        <strong>
+            Ángela Ruiz Robles
+        </strong>
 
     </div>
+
 
 </main>
 
@@ -232,10 +302,8 @@
 
 </footer>
 
+
 </body>
+
 </html>
 ```
-
-
-
-        
