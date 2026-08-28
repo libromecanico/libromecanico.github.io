@@ -21,21 +21,26 @@
             color: #333;
         }
 
+        /* CABECEIRA */
+
         header {
             background: #263b4d;
             color: white;
             text-align: center;
-            padding: 65px 20px;
+            padding: 60px 20px;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 2.4rem;
             font-weight: 600;
         }
 
+        /* CONTIDO */
+
         main {
-            max-width: 1000px;
+            max-width: 1050px;
             margin: 45px auto;
             padding: 0 20px;
         }
@@ -46,22 +51,25 @@
         }
 
         .presentacion p {
-            max-width: 800px;
+            max-width: 850px;
             margin: auto;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             line-height: 1.7;
         }
 
+        /* FICHAS */
+
         .fichas {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
         .ficha {
             background: white;
-            min-height: 190px;
-            padding: 30px;
+            min-height: 210px;
+            padding: 30px 20px;
+
             border-radius: 14px;
 
             text-align: center;
@@ -83,55 +91,102 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
+        /* ICONOS */
+
         .icono {
             font-size: 3rem;
             margin-bottom: 15px;
         }
 
-        .ficha h2 {
-            margin: 0 0 18px;
-            font-size: 1.4rem;
+        /* LOGO LELA */
+
+        .logo-lela {
+            width: 160px;
+            height: 85px;
+            object-fit: contain;
+            margin-bottom: 15px;
         }
 
+        /* TÍTULOS */
+
+        .ficha h2 {
+            margin: 0 0 18px;
+            font-size: 1.3rem;
+        }
+
+        /* BOTÓNS */
+
         .boton {
-            padding: 10px 22px;
+            padding: 10px 20px;
+
             border-radius: 6px;
+
             background: #263b4d;
             color: white;
+
             font-size: 0.95rem;
         }
+
+        /* CITA */
 
         .cita {
             margin-top: 45px;
             padding: 30px;
 
             background: white;
+
             border-left: 5px solid #263b4d;
             border-radius: 8px;
 
             text-align: center;
             font-style: italic;
+
             line-height: 1.7;
         }
 
+        .cita strong {
+            font-style: normal;
+        }
+
+        /* PÉ */
+
         footer {
             margin-top: 50px;
+
             background: #263b4d;
             color: white;
+
             text-align: center;
+
             padding: 25px;
         }
 
-        @media (max-width: 700px) {
+        /* MÓBIL */
+
+        @media (max-width: 800px) {
+
+            .fichas {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
             header h1 {
-                font-size: 1.9rem;
+                font-size: 2rem;
             }
+        }
+
+        @media (max-width: 550px) {
 
             .fichas {
                 grid-template-columns: 1fr;
             }
 
+            header h1 {
+                font-size: 1.7rem;
+            }
+
+            main {
+                margin-top: 30px;
+            }
         }
 
     </style>
@@ -154,6 +209,8 @@
 <main>
 
 
+    <!-- PRESENTACIÓN -->
+
     <div class="presentacion">
 
         <p>
@@ -167,14 +224,17 @@
     </div>
 
 
+    <!-- SEIS FICHAS -->
+
     <div class="fichas">
 
 
-        <!-- ENCICLOPEDIA MECÁNICA -->
+        <!-- 1. ENCICLOPEDIA MECÁNICA -->
 
         <a class="ficha"
            href="https://espacio.fundaciontelefonica.com/infos/enciclopediaMecanica/enciclopediaMecanica.html"
-           target="_blank">
+           target="_blank"
+           rel="noopener noreferrer">
 
             <div class="icono">
                 📖
@@ -191,11 +251,12 @@
         </a>
 
 
-        <!-- MAPA -->
+        <!-- 2. LIBRO DO FUTURO -->
 
         <a class="ficha"
            href="https://emapic.es/custom/geolibros/AngelaRuizRobles"
-           target="_blank">
+           target="_blank"
+           rel="noopener noreferrer">
 
             <div class="icono">
                 🗺️
@@ -212,11 +273,12 @@
         </a>
 
 
-        <!-- XOGO -->
+        <!-- 3. XOGO -->
 
         <a class="ficha"
            href="https://github.com/libromecanico"
-           target="_blank">
+           target="_blank"
+           rel="noopener noreferrer">
 
             <div class="icono">
                 🎮
@@ -233,11 +295,12 @@
         </a>
 
 
-        <!-- UNIDADE DIDÁCTICA -->
+        <!-- 4. UNIDADE DIDÁCTICA -->
 
         <a class="ficha"
            href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
-           target="_blank">
+           target="_blank"
+           rel="noopener noreferrer">
 
             <div class="icono">
                 👩‍🏫
@@ -254,11 +317,12 @@
         </a>
 
 
-        <!-- TWITTER -->
+        <!-- 5. TWITTER -->
 
         <a class="ficha"
            href="https://twitter.com/libromecanico"
-           target="_blank">
+           target="_blank"
+           rel="noopener noreferrer">
 
             <div class="icono">
                 💬
@@ -275,8 +339,33 @@
         </a>
 
 
+        <!-- 6. LELA EDICIÓNS -->
+
+        <a class="ficha"
+           href="https://lelaedicions.blogspot.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <img
+                src="lelalogo.jpg"
+                alt="Lela Edicións"
+                class="logo-lela">
+
+            <h2>
+                Lela Edicións
+            </h2>
+
+            <span class="boton">
+                Visitar editorial
+            </span>
+
+        </a>
+
+
     </div>
 
+
+    <!-- CITA -->
 
     <div class="cita">
 
@@ -287,7 +376,7 @@
         </p>
 
         <strong>
-            Ángela Ruiz Robles
+            Ángela Ruíz Robles
         </strong>
 
     </div>
