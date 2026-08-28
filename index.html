@@ -21,26 +21,21 @@
             color: #333;
         }
 
-        /* CABECEIRA */
-
         header {
             background: #263b4d;
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 65px 20px;
         }
 
         header h1 {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 2.4rem;
+            margin: 0;
+            font-size: 2.5rem;
             font-weight: 600;
         }
 
-        /* CONTIDO */
-
         main {
-            max-width: 1050px;
+            max-width: 1000px;
             margin: 45px auto;
             padding: 0 20px;
         }
@@ -51,25 +46,22 @@
         }
 
         .presentacion p {
-            max-width: 850px;
+            max-width: 800px;
             margin: auto;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             line-height: 1.7;
         }
 
-        /* FICHAS */
-
         .fichas {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 25px;
         }
 
         .ficha {
             background: white;
-            min-height: 210px;
-            padding: 30px 20px;
-
+            min-height: 190px;
+            padding: 30px;
             border-radius: 14px;
 
             text-align: center;
@@ -91,102 +83,55 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
-        /* ICONOS */
-
         .icono {
             font-size: 3rem;
             margin-bottom: 15px;
         }
 
-        /* LOGO LELA */
-
-        .logo-lela {
-            width: 160px;
-            height: 85px;
-            object-fit: contain;
-            margin-bottom: 15px;
-        }
-
-        /* TÍTULOS */
-
         .ficha h2 {
             margin: 0 0 18px;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
-
-        /* BOTÓNS */
 
         .boton {
-            padding: 10px 20px;
-
+            padding: 10px 22px;
             border-radius: 6px;
-
             background: #263b4d;
             color: white;
-
             font-size: 0.95rem;
         }
-
-        /* CITA */
 
         .cita {
             margin-top: 45px;
             padding: 30px;
 
             background: white;
-
             border-left: 5px solid #263b4d;
             border-radius: 8px;
 
             text-align: center;
             font-style: italic;
-
             line-height: 1.7;
         }
 
-        .cita strong {
-            font-style: normal;
-        }
-
-        /* PÉ */
-
         footer {
             margin-top: 50px;
-
             background: #263b4d;
             color: white;
-
             text-align: center;
-
             padding: 25px;
         }
 
-        /* MÓBIL */
-
-        @media (max-width: 800px) {
-
-            .fichas {
-                grid-template-columns: repeat(2, 1fr);
-            }
+        @media (max-width: 700px) {
 
             header h1 {
-                font-size: 2rem;
+                font-size: 1.9rem;
             }
-        }
-
-        @media (max-width: 550px) {
 
             .fichas {
                 grid-template-columns: 1fr;
             }
 
-            header h1 {
-                font-size: 1.7rem;
-            }
-
-            main {
-                margin-top: 30px;
-            }
         }
 
     </style>
@@ -209,8 +154,6 @@
 <main>
 
 
-    <!-- PRESENTACIÓN -->
-
     <div class="presentacion">
 
         <p>
@@ -224,17 +167,14 @@
     </div>
 
 
-    <!-- SEIS FICHAS -->
-
     <div class="fichas">
 
 
-        <!-- 1. ENCICLOPEDIA MECÁNICA -->
+        <!-- ENCICLOPEDIA MECÁNICA -->
 
         <a class="ficha"
            href="https://espacio.fundaciontelefonica.com/infos/enciclopediaMecanica/enciclopediaMecanica.html"
-           target="_blank"
-           rel="noopener noreferrer">
+           target="_blank">
 
             <div class="icono">
                 📖
@@ -251,12 +191,11 @@
         </a>
 
 
-        <!-- 2. LIBRO DO FUTURO -->
+        <!-- MAPA -->
 
         <a class="ficha"
            href="https://emapic.es/custom/geolibros/AngelaRuizRobles"
-           target="_blank"
-           rel="noopener noreferrer">
+           target="_blank">
 
             <div class="icono">
                 🗺️
@@ -273,12 +212,11 @@
         </a>
 
 
-        <!-- 3. XOGO -->
+        <!-- XOGO -->
 
         <a class="ficha"
            href="https://github.com/libromecanico"
-           target="_blank"
-           rel="noopener noreferrer">
+           target="_blank">
 
             <div class="icono">
                 🎮
@@ -295,12 +233,11 @@
         </a>
 
 
-        <!-- 4. UNIDADE DIDÁCTICA -->
+        <!-- UNIDADE DIDÁCTICA -->
 
         <a class="ficha"
            href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
-           target="_blank"
-           rel="noopener noreferrer">
+           target="_blank">
 
             <div class="icono">
                 👩‍🏫
@@ -317,12 +254,11 @@
         </a>
 
 
-        <!-- 5. TWITTER -->
+        <!-- TWITTER -->
 
         <a class="ficha"
            href="https://twitter.com/libromecanico"
-           target="_blank"
-           rel="noopener noreferrer">
+           target="_blank">
 
             <div class="icono">
                 💬
@@ -339,33 +275,8 @@
         </a>
 
 
-        <!-- 6. LELA EDICIÓNS -->
-
-        <a class="ficha"
-           href="https://lelaedicions.blogspot.com/"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <img
-                src="lelalogo.jpg"
-                alt="Lela Edicións"
-                class="logo-lela">
-
-            <h2>
-                Lela Edicións
-            </h2>
-
-            <span class="boton">
-                Visitar editorial
-            </span>
-
-        </a>
-
-
     </div>
 
-
-    <!-- CITA -->
 
     <div class="cita">
 
@@ -376,7 +287,7 @@
         </p>
 
         <strong>
-            Ángela Ruíz Robles
+            Ángela Ruiz Robles
         </strong>
 
     </div>
