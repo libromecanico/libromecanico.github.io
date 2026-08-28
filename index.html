@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ángela Ruíz Robles | Libro Mecánico</title>
+    <title>Ángela Ruíz Robles</title>
 
     <style>
         * {
@@ -15,7 +15,7 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
+            background: #f3f5f7;
             color: #333;
         }
 
@@ -23,33 +23,31 @@
             background: #263b4d;
             color: white;
             text-align: center;
-            padding: 55px 20px 45px;
+            padding: 65px 20px;
         }
 
         header h1 {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 2.4rem;
+            margin: 0;
+            font-size: 2.5rem;
             font-weight: 600;
         }
 
         main {
             max-width: 1000px;
-            margin: 40px auto;
+            margin: 45px auto;
             padding: 0 20px;
         }
 
-        .intro {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 35px;
+        .presentacion {
             text-align: center;
+            margin-bottom: 40px;
         }
 
-        .intro p {
-            margin: 10px 0;
-            font-size: 1.05rem;
+        .presentacion p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: auto;
         }
 
         .fichas {
@@ -60,19 +58,25 @@
 
         .ficha {
             background: white;
-            border-radius: 12px;
+            min-height: 190px;
             padding: 30px;
+            border-radius: 14px;
             text-align: center;
             text-decoration: none;
-            color: #333;
+            color: #263b4d;
             box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-            transition: transform 0.2s, box-shadow 0.2s;
-            display: block;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            transition: 0.2s;
         }
 
         .ficha:hover {
             transform: translateY(-5px);
-            box-shadow: 0 7px 18px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
         .icono {
@@ -81,22 +85,25 @@
         }
 
         .ficha h2 {
-            color: #263b4d;
-            margin: 5px 0 12px;
+            margin: 0 0 18px;
             font-size: 1.4rem;
         }
 
-        .ficha p {
-            margin: 0;
-            line-height: 1.6;
+        .boton {
+            padding: 10px 20px;
+            border-radius: 6px;
+            background: #263b4d;
+            color: white;
+            font-size: 0.95rem;
         }
 
         .cita {
-            margin-top: 40px;
-            background: white;
+            margin-top: 45px;
             padding: 30px;
+            background: white;
             border-left: 5px solid #263b4d;
             border-radius: 8px;
+            text-align: center;
             font-style: italic;
             line-height: 1.7;
         }
@@ -112,17 +119,11 @@
         @media (max-width: 700px) {
 
             header h1 {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
             }
 
             .fichas {
                 grid-template-columns: 1fr;
-            }
-
-            .intro,
-            .ficha,
-            .cita {
-                padding: 25px;
             }
         }
     </style>
@@ -139,22 +140,14 @@
 
 <main>
 
-    <div class="intro">
+    <div class="presentacion">
 
         <p>
             A idea deste libro parte da necesidade de poñer en valor as
             cualidades e traxectoria de mulleres <strong>STEAM</strong>
-            que foron pioneiras no seu eido.
-        </p>
-
-        <p>
-            Este exemplar contén máis que unha breve biografía ilustrada
-            por Tania Solla e editada por Lela Edicións.
-        </p>
-
-        <p>
-            Podedes atopar nela diferentes recursos educativos sobre
-            Ángela Ruíz Robles e o seu Libro Mecánico.
+            que foron pioneiras no seu eido. Este exemplar contén máis que
+            unha breve biografía ilustrada por Tania Solla e editada por
+            Lela Edicións.
         </p>
 
     </div>
@@ -162,105 +155,56 @@
 
     <div class="fichas">
 
-        <!-- LIBRO MECÁNICO -->
         <a class="ficha" href="#" target="_blank">
-
             <div class="icono">📖</div>
-
-            <h2>
-                Libro mecánico
-            </h2>
-
-            <p>
-                Unha versión interactiva do Libro Mecánico.
-            </p>
-
+            <h2>Libro mecánico interactivo</h2>
+            <span class="boton">Acceder</span>
         </a>
 
 
-        <!-- LIBRO DO FUTURO -->
         <a class="ficha" href="#" target="_blank">
-
-            <div class="icono">💡</div>
-
-            <h2>
-                Libro do futuro
-            </h2>
-
-            <p>
-                Un mapa onde podedes debuxar a vosa idea
-                dun libro mecánico do futuro.
-            </p>
-
+            <div class="icono">🗺️</div>
+            <h2>Libro mecánico do futuro</h2>
+            <span class="boton">Acceder</span>
         </a>
 
 
-        <!-- VOCABULARIO -->
         <a class="ficha" href="#" target="_blank">
-
             <div class="icono">📚</div>
-
-            <h2>
-                Vocabulario e bibliografía
-            </h2>
-
-            <p>
-                Vocabulario de interese e referencias bibliográficas.
-            </p>
-
+            <h2>Vocabulario e bibliografía</h2>
+            <span class="boton">Acceder</span>
         </a>
 
 
-        <!-- XOGO -->
         <a class="ficha"
            href="https://github.com/libromecanico"
            target="_blank">
 
             <div class="icono">🎮</div>
-
-            <h2>
-                Xogo en Python
-            </h2>
-
-            <p>
-                Accede ao xogo e ao repositorio de GitHub.
-            </p>
+            <h2>Xogo en Python</h2>
+            <span class="boton">Acceder</span>
 
         </a>
 
 
-        <!-- UNIDADE DIDÁCTICA -->
         <a class="ficha"
            href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
            target="_blank">
 
             <div class="icono">👩‍🏫</div>
-
-            <h2>
-                Unidade didáctica
-            </h2>
-
-            <p>
-                Material para traballar sobre a autora na aula.
-            </p>
+            <h2>Unidade didáctica</h2>
+            <span class="boton">Acceder</span>
 
         </a>
 
 
-        <!-- TWITTER -->
         <a class="ficha"
            href="https://twitter.com/libromecanico"
            target="_blank">
 
             <div class="icono">💬</div>
-
-            <h2>
-                @libromecanico
-            </h2>
-
-            <p>
-                Interactúa coa autora a través das redes sociais.
-            </p>
+            <h2>@libromecanico</h2>
+            <span class="boton">Acceder</span>
 
         </a>
 
@@ -269,13 +213,13 @@
 
     <div class="cita">
 
-        <strong>Como diría Ángela Ruiz Robles:</strong>
-
         <p>
             “Venimos a este mundo no solo a vivir nuestra vida lo más
             cómodo y mejor posible, sino a preocuparnos de los demás,
             para que puedan beneficiarse de algo ofrecido por nosotros.”
         </p>
+
+        <strong>Ángela Ruiz Robles</strong>
 
     </div>
 
@@ -284,12 +228,14 @@
 
 <footer>
 
-    <p>
-        Ángela Ruíz Robles · Libro Mecánico
-    </p>
+    Ángela Ruíz Robles · Libro Mecánico
 
 </footer>
 
 </body>
 </html>
 ```
+
+
+
+        
