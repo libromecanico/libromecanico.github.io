@@ -1,82 +1,398 @@
 ```html
-<div class="fichas">
+<!DOCTYPE html>
+<html lang="gl">
 
-    <!-- ENCICLOPEDIA MECÁNICA -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <a class="ficha"
-       href="https://espacio.fundaciontelefonica.com/infos/enciclopediaMecanica/enciclopediaMecanica.html"
-       target="_blank">
+    <title>Ángela Ruíz Robles</title>
 
-        <div class="icono">📖</div>
+    <style>
 
-        <h2>Enciclopedia Mecánica interactiva</h2>
+        * {
+            box-sizing: border-box;
+        }
 
-        <span class="boton">Acceder</span>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f5f6;
+            color: #333;
+        }
 
-    </a>
+        /* CABECEIRA */
+
+        header {
+            background: #263b4d;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 2.4rem;
+            font-weight: 600;
+        }
+
+        /* CONTIDO */
+
+        main {
+            max-width: 1050px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .presentacion {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .presentacion p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* FICHAS */
+
+        .fichas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .ficha {
+            background: white;
+            min-height: 210px;
+            padding: 30px 20px;
+
+            border-radius: 14px;
+
+            text-align: center;
+            text-decoration: none;
+            color: #263b4d;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .ficha:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* ICONOS */
+
+        .icono {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        /* LOGO LELA */
+
+        .logo-lela {
+            width: 160px;
+            height: 85px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        /* TÍTULOS */
+
+        .ficha h2 {
+            margin: 0 0 18px;
+            font-size: 1.3rem;
+        }
+
+        /* BOTÓNS */
+
+        .boton {
+            padding: 10px 20px;
+
+            border-radius: 6px;
+
+            background: #263b4d;
+            color: white;
+
+            font-size: 0.95rem;
+        }
+
+        /* CITA */
+
+        .cita {
+            margin-top: 45px;
+            padding: 30px;
+
+            background: white;
+
+            border-left: 5px solid #263b4d;
+            border-radius: 8px;
+
+            text-align: center;
+            font-style: italic;
+
+            line-height: 1.7;
+        }
+
+        .cita strong {
+            font-style: normal;
+        }
+
+        /* PÉ */
+
+        footer {
+            margin-top: 50px;
+
+            background: #263b4d;
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+        }
+
+        /* MÓBIL */
+
+        @media (max-width: 800px) {
+
+            .fichas {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .fichas {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.7rem;
+            }
+
+            main {
+                margin-top: 30px;
+            }
+        }
+
+    </style>
+
+</head>
 
 
-    <!-- LIBRO MECÁNICO DO FUTURO -->
-
-    <a class="ficha"
-       href="https://emapic.es/custom/geolibros/AngelaRuizRobles"
-       target="_blank">
-
-        <div class="icono">🗺️</div>
-
-        <h2>Libro mecánico do futuro</h2>
-
-        <span class="boton">Participar</span>
-
-    </a>
+<body>
 
 
-    <!-- XOGO -->
+<header>
 
-    <a class="ficha"
-       href="https://github.com/libromecanico"
-       target="_blank">
+    <h1>
+        Páxina oficial da pequena biografía de Ángela Ruíz Robles
+    </h1>
 
-        <div class="icono">🎮</div>
-
-        <h2>Xogo en Python</h2>
-
-        <span class="boton">Ir a GitHub</span>
-
-    </a>
+</header>
 
 
-    <!-- UNIDADE DIDÁCTICA -->
-
-    <a class="ficha"
-       href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
-       target="_blank">
-
-        <div class="icono">👩‍🏫</div>
-
-        <h2>Unidade didáctica</h2>
-
-        <span class="boton">Ver material</span>
-
-    </a>
+<main>
 
 
-    <!-- LELA EDICIÓNS -->
+    <!-- PRESENTACIÓN -->
 
-    <a class="ficha"
-       href="https://lelaedicions.blogspot.com/"
-       target="_blank">
+    <div class="presentacion">
 
-        <img
-            src="lelalogo.jpg"
-            alt="Lela Edicións"
-            class="logo-lela">
+        <p>
+            A idea deste libro parte da necesidade de poñer en valor as
+            cualidades e traxectoria de mulleres <strong>STEAM</strong>
+            que foron pioneiras no seu eido. Este exemplar contén máis que
+            unha breve biografía ilustrada por Tania Solla e editada por
+            Lela Edicións.
+        </p>
 
-        <h2>Lela Edicións</h2>
+    </div>
 
-        <span class="boton">Visitar editorial</span>
 
-    </a>
+    <!-- SEIS FICHAS -->
 
-</div>
+    <div class="fichas">
+
+
+        <!-- 1. ENCICLOPEDIA MECÁNICA -->
+
+        <a class="ficha"
+           href="https://espacio.fundaciontelefonica.com/infos/enciclopediaMecanica/enciclopediaMecanica.html"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="icono">
+                📖
+            </div>
+
+            <h2>
+                Enciclopedia Mecánica interactiva
+            </h2>
+
+            <span class="boton">
+                Acceder
+            </span>
+
+        </a>
+
+
+        <!-- 2. LIBRO DO FUTURO -->
+
+        <a class="ficha"
+           href="https://emapic.es/custom/geolibros/AngelaRuizRobles"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="icono">
+                🗺️
+            </div>
+
+            <h2>
+                Libro mecánico do futuro
+            </h2>
+
+            <span class="boton">
+                Participar
+            </span>
+
+        </a>
+
+
+        <!-- 3. XOGO -->
+
+        <a class="ficha"
+           href="https://github.com/libromecanico"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="icono">
+                🎮
+            </div>
+
+            <h2>
+                Xogo en Python
+            </h2>
+
+            <span class="boton">
+                Ir a GitHub
+            </span>
+
+        </a>
+
+
+        <!-- 4. UNIDADE DIDÁCTICA -->
+
+        <a class="ficha"
+           href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="icono">
+                👩‍🏫
+            </div>
+
+            <h2>
+                Unidade didáctica
+            </h2>
+
+            <span class="boton">
+                Ver material
+            </span>
+
+        </a>
+
+
+        <!-- 5. TWITTER -->
+
+        <a class="ficha"
+           href="https://twitter.com/libromecanico"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="icono">
+                💬
+            </div>
+
+            <h2>
+                @libromecanico
+            </h2>
+
+            <span class="boton">
+                Visitar
+            </span>
+
+        </a>
+
+
+        <!-- 6. LELA EDICIÓNS -->
+
+        <a class="ficha"
+           href="https://lelaedicions.blogspot.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <img
+                src="lelalogo.jpg"
+                alt="Lela Edicións"
+                class="logo-lela">
+
+            <h2>
+                Lela Edicións
+            </h2>
+
+            <span class="boton">
+                Visitar editorial
+            </span>
+
+        </a>
+
+
+    </div>
+
+
+    <!-- CITA -->
+
+    <div class="cita">
+
+        <p>
+            “Venimos a este mundo no solo a vivir nuestra vida lo más
+            cómodo y mejor posible, sino a preocuparnos de los demás,
+            para que puedan beneficiarse de algo ofrecido por nosotros.”
+        </p>
+
+        <strong>
+            Ángela Ruíz Robles
+        </strong>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    Ángela Ruíz Robles · Libro Mecánico
+
+</footer>
+
+
+</body>
+
+</html>
 ```
