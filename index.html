@@ -1,309 +1,82 @@
 ```html
-<!DOCTYPE html>
-<html lang="gl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ángela Ruíz Robles</title>
-
-    <style>
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f5f6;
-            color: #333;
-        }
-
-        header {
-            background: #263b4d;
-            color: white;
-            text-align: center;
-            padding: 65px 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: 45px auto;
-            padding: 0 20px;
-        }
-
-        .presentacion {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .presentacion p {
-            max-width: 800px;
-            margin: auto;
-            font-size: 1.15rem;
-            line-height: 1.7;
-        }
+<div class="fichas">
 
-        .fichas {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
+    <!-- ENCICLOPEDIA MECÁNICA -->
 
-        .ficha {
-            background: white;
-            min-height: 190px;
-            padding: 30px;
-            border-radius: 14px;
+    <a class="ficha"
+       href="https://espacio.fundaciontelefonica.com/infos/enciclopediaMecanica/enciclopediaMecanica.html"
+       target="_blank">
 
-            text-align: center;
-            text-decoration: none;
-            color: #263b4d;
+        <div class="icono">📖</div>
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        <h2>Enciclopedia Mecánica interactiva</h2>
 
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        <span class="boton">Acceder</span>
 
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+    </a>
 
-        .ficha:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
 
-        .icono {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
+    <!-- LIBRO MECÁNICO DO FUTURO -->
 
-        .ficha h2 {
-            margin: 0 0 18px;
-            font-size: 1.4rem;
-        }
+    <a class="ficha"
+       href="https://emapic.es/custom/geolibros/AngelaRuizRobles"
+       target="_blank">
 
-        .boton {
-            padding: 10px 22px;
-            border-radius: 6px;
-            background: #263b4d;
-            color: white;
-            font-size: 0.95rem;
-        }
+        <div class="icono">🗺️</div>
 
-        .cita {
-            margin-top: 45px;
-            padding: 30px;
+        <h2>Libro mecánico do futuro</h2>
 
-            background: white;
-            border-left: 5px solid #263b4d;
-            border-radius: 8px;
+        <span class="boton">Participar</span>
 
-            text-align: center;
-            font-style: italic;
-            line-height: 1.7;
-        }
+    </a>
 
-        footer {
-            margin-top: 50px;
-            background: #263b4d;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
 
-        @media (max-width: 700px) {
+    <!-- XOGO -->
 
-            header h1 {
-                font-size: 1.9rem;
-            }
+    <a class="ficha"
+       href="https://github.com/libromecanico"
+       target="_blank">
 
-            .fichas {
-                grid-template-columns: 1fr;
-            }
+        <div class="icono">🎮</div>
 
-        }
+        <h2>Xogo en Python</h2>
 
-    </style>
+        <span class="boton">Ir a GitHub</span>
 
-</head>
+    </a>
 
 
-<body>
+    <!-- UNIDADE DIDÁCTICA -->
 
+    <a class="ficha"
+       href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
+       target="_blank">
 
-<header>
+        <div class="icono">👩‍🏫</div>
 
-    <h1>
-        Páxina oficial da pequena biografía de Ángela Ruíz Robles
-    </h1>
+        <h2>Unidade didáctica</h2>
 
-</header>
+        <span class="boton">Ver material</span>
 
+    </a>
 
-<main>
 
+    <!-- LELA EDICIÓNS -->
 
-    <div class="presentacion">
+    <a class="ficha"
+       href="https://lelaedicions.blogspot.com/"
+       target="_blank">
 
-        <p>
-            A idea deste libro parte da necesidade de poñer en valor as
-            cualidades e traxectoria de mulleres <strong>STEAM</strong>
-            que foron pioneiras no seu eido. Este exemplar contén máis que
-            unha breve biografía ilustrada por Tania Solla e editada por
-            Lela Edicións.
-        </p>
+        <img
+            src="lelalogo.jpg"
+            alt="Lela Edicións"
+            class="logo-lela">
 
-    </div>
+        <h2>Lela Edicións</h2>
 
+        <span class="boton">Visitar editorial</span>
 
-    <div class="fichas">
+    </a>
 
-
-        <!-- ENCICLOPEDIA MECÁNICA -->
-
-        <a class="ficha"
-           href="https://espacio.fundaciontelefonica.com/infos/enciclopediaMecanica/enciclopediaMecanica.html"
-           target="_blank">
-
-            <div class="icono">
-                📖
-            </div>
-
-            <h2>
-                Enciclopedia Mecánica interactiva
-            </h2>
-
-            <span class="boton">
-                Acceder
-            </span>
-
-        </a>
-
-
-        <!-- MAPA -->
-
-        <a class="ficha"
-           href="https://emapic.es/custom/geolibros/AngelaRuizRobles"
-           target="_blank">
-
-            <div class="icono">
-                🗺️
-            </div>
-
-            <h2>
-                Libro mecánico do futuro
-            </h2>
-
-            <span class="boton">
-                Participar
-            </span>
-
-        </a>
-
-
-        <!-- XOGO -->
-
-        <a class="ficha"
-           href="https://github.com/libromecanico"
-           target="_blank">
-
-            <div class="icono">
-                🎮
-            </div>
-
-            <h2>
-                Xogo en Python
-            </h2>
-
-            <span class="boton">
-                Ir a GitHub
-            </span>
-
-        </a>
-
-
-        <!-- UNIDADE DIDÁCTICA -->
-
-        <a class="ficha"
-           href="https://github.com/libromecanico/Material_escolar/blob/b5a844aa232b4bc4206f750d65a4ebab8655e975/unidadedidactica.pdf"
-           target="_blank">
-
-            <div class="icono">
-                👩‍🏫
-            </div>
-
-            <h2>
-                Unidade didáctica
-            </h2>
-
-            <span class="boton">
-                Ver material
-            </span>
-
-        </a>
-
-
-        <!-- TWITTER -->
-
-        <a class="ficha"
-           href="https://twitter.com/libromecanico"
-           target="_blank">
-
-            <div class="icono">
-                💬
-            </div>
-
-            <h2>
-                @libromecanico
-            </h2>
-
-            <span class="boton">
-                Visitar
-            </span>
-
-        </a>
-
-
-    </div>
-
-
-    <div class="cita">
-
-        <p>
-            “Venimos a este mundo no solo a vivir nuestra vida lo más
-            cómodo y mejor posible, sino a preocuparnos de los demás,
-            para que puedan beneficiarse de algo ofrecido por nosotros.”
-        </p>
-
-        <strong>
-            Ángela Ruiz Robles
-        </strong>
-
-    </div>
-
-
-</main>
-
-
-<footer>
-
-    Ángela Ruíz Robles · Libro Mecánico
-
-</footer>
-
-
-</body>
-
-</html>
+</div>
 ```
